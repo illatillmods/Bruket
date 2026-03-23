@@ -28,7 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className}>
       <body>
-        {children}
+        <div className="relative min-h-screen flex flex-col">
+          {/* Artistic, subtle background layer */}
+          {require('../components/BackgroundArtwork').default()}
+          <div className="relative z-10 flex-1 flex flex-col">
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   )

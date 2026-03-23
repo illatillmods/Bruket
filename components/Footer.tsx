@@ -13,6 +13,12 @@ export default function Footer() {
         </nav>
         <div>&copy; {new Date().getFullYear()} Bruket</div>
       </div>
+      <div
+        className="mt-4 text-xs text-neutral-600 md:text-left text-center w-full md:w-auto mx-auto md:mx-0"
+        style={{ letterSpacing: '0.01em' }}
+      >
+        <span className="block md:inline opacity-80">Built in Sweden</span>
+      </div>
     </footer>
   )
 }
