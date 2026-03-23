@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import CTAButton from '../../components/CTAButton'
@@ -19,14 +20,14 @@ export default function HyralPage() {
           >
             Find apartments before everyone else.
           </motion.h1>
-          <motion.p
+          <motion.div
             className="text-lg text-neutral-300 mb-8"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.06, duration: 0.45 }}
           >
             Hyral makes Sweden’s rental market less painful.
-          </motion.p>
+          </motion.div>
         </Section>
         {/* Sections */}
         <Section>

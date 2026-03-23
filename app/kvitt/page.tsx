@@ -1,3 +1,4 @@
+'use client'
 import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import CTAButton from '../../components/CTAButton'
