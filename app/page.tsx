@@ -11,7 +11,6 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        {/* Hero Section */}
         <Section>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -21,6 +20,7 @@ export default function Home() {
           >
             Bruket.
           </motion.h1>
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 0.86, y: 0 }}
@@ -29,12 +29,12 @@ export default function Home() {
           >
             We build tools that are actually useful.
           </motion.p>
+
           <CTAButton as="a" href="#products" className="mt-2">
             View products
           </CTAButton>
         </Section>
 
-        {/* Products */}
         <Section id="products">
           <div className="grid md:grid-cols-2 gap-8">
             <ProductCard
@@ -52,7 +52,6 @@ export default function Home() {
           </div>
         </Section>
 
-        {/* Philosophy */}
         <Section>
           <div className="flex flex-col gap-5">
             <p className="text-xl font-medium text-white">Less features. More function.</p>
@@ -65,4 +64,3 @@ export default function Home() {
     </>
   )
 }
-

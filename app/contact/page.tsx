@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import Footer from '../../components/Footer'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false)
@@ -23,14 +23,14 @@ export default function ContactPage() {
       <Navbar />
       <main>
         <Section>
-          <motion.h1
+          <m.h1
             className="text-4xl md:text-6xl font-extrabold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Contact
-          </motion.h1>
+          </m.h1>
           {!sent ? (
             <form className="space-y-6 max-w-md" onSubmit={handleSubmit}>
               <div>
@@ -61,14 +61,14 @@ export default function ContactPage() {
               </button>
             </form>
           ) : (
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               className="text-green-400 text-lg font-medium"
             >
               Thanks for reaching out. We’ll be in touch.
-            </motion.div>
+            </m.div>
           )}
         </Section>
       </main>

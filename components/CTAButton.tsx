@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Link from 'next/link'
 
 interface CTAButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -25,7 +25,7 @@ export default function CTAButton({ children, as = 'button', href, className = '
     if (isInternal) {
       return (
         <Link href={href} legacyBehavior passHref>
-          <motion.a
+          <m.a
             className={`px-6 py-3 border border-neutral-800 text-base font-semibold text-neutral-100 bg-transparent transition-colors hover:border-white focus:outline-none inline-block cursor-pointer ${className}`}
             id={id}
             tabIndex={tabIndex}
@@ -33,13 +33,13 @@ export default function CTAButton({ children, as = 'button', href, className = '
             {...motionProps}
           >
             {children}
-          </motion.a>
+          </m.a>
         </Link>
       );
     }
     // External and hash links
     return (
-      <motion.a
+      <m.a
         href={href}
         className={`px-6 py-3 border border-neutral-800 text-base font-semibold text-neutral-100 bg-transparent transition-colors hover:border-white focus:outline-none inline-block cursor-pointer ${className}`}
         id={id}
@@ -49,13 +49,13 @@ export default function CTAButton({ children, as = 'button', href, className = '
         {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       >
         {children}
-      </motion.a>
+      </m.a>
     )
   }
   // Button
   const { id, tabIndex, type, 'aria-label': ariaLabel } = props;
   return (
-    <motion.button
+    <m.button
       className={`px-6 py-3 border border-neutral-800 text-base font-semibold text-neutral-100 bg-transparent transition-colors hover:border-white focus:outline-none ${className}`}
       id={id}
       tabIndex={tabIndex}
@@ -64,7 +64,7 @@ export default function CTAButton({ children, as = 'button', href, className = '
       {...motionProps}
     >
       {children}
-    </motion.button>
+    </m.button>
   );
 }
 

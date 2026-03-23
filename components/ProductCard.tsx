@@ -1,5 +1,5 @@
 'use client'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import Link from 'next/link'
 
 interface ProductCardProps {
@@ -11,7 +11,7 @@ interface ProductCardProps {
 
 export default function ProductCard({ title, description, details, href }: ProductCardProps) {
   return (
-    <motion.div
+    <m.div
       whileHover={{ y: -6, boxShadow: '0 4px 32px #00000020' }}
       transition={{ type: 'spring', stiffness: 250, damping: 20 }}
       className="group border border-neutral-800 bg-neutral-950/80 p-8 flex flex-col gap-4 hover:border-white transition-all"
@@ -22,6 +22,6 @@ export default function ProductCard({ title, description, details, href }: Produ
       <Link href={href} className="mt-auto text-neutral-200 font-medium group-hover:underline transition-colors w-max">
         Learn more &rarr;
       </Link>
-    </motion.div>
+    </m.div>
   )
 }

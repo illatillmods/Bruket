@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import CTAButton from '../../components/CTAButton'
 import Footer from '../../components/Footer'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 
 export default function HyralPage() {
   return (
@@ -12,22 +12,22 @@ export default function HyralPage() {
       <main>
         {/* Hero */}
         <Section>
-          <motion.h1
+          <m.h1
             className="text-4xl md:text-6xl font-extrabold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Find apartments before everyone else.
-          </motion.h1>
-          <motion.div
+          </m.h1>
+          <m.div
             className="text-lg text-neutral-300 mb-8"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.06, duration: 0.45 }}
           >
             Hyral makes Sweden’s rental market less painful.
-          </motion.div>
+          </m.div>
         </Section>
         {/* Sections */}
         <Section>

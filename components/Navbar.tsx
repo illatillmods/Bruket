@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -34,7 +34,7 @@ export default function Navbar() {
               >
                 {link.label}
                 {pathname === link.href &&
-                  <motion.span
+                  <m.span
                     className="block h-0.5 bg-white mt-1"
                     layoutId="navUnderline"
                     transition={{ type: 'spring', stiffness: 500, damping: 30 }}

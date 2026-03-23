@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import Section from '../../components/Section'
 import CTAButton from '../../components/CTAButton'
 import Footer from '../../components/Footer'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 
 export default function KvittPage() {
   return (
@@ -11,22 +11,22 @@ export default function KvittPage() {
       <Navbar />
       <main>
         <Section>
-          <motion.h1
+          <m.h1
             className="text-4xl md:text-6xl font-extrabold mb-6"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Your spending, actually understood.
-          </motion.h1>
-          <motion.p
+          </m.h1>
+          <m.p
             className="text-lg text-neutral-300 mb-8"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.06, duration: 0.45 }}
           >
             KVITT decodes your purchases to help you understand exactly what you spend.
-          </motion.p>
+          </m.p>
         </Section>
         <Section>
           <div className="mb-7">
