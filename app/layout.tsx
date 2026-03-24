@@ -8,11 +8,29 @@ import Footer from '../components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  icons: [
-    { rel: 'icon', url: '/favicon-light.png', media: '(prefers-color-scheme: light)' },
-    { rel: 'icon', url: '/favicon-dark.png', media: '(prefers-color-scheme: dark)' },
-    { rel: 'icon', url: '/favicon-light.png' }
-  ],
+  icons: {
+    icon: [
+      {
+        url: '/favicon-light.png',
+        sizes: '32x32',
+        media: '(prefers-color-scheme: light)',
+        type: 'image/png',
+      },
+      {
+        url: '/favicon-dark.png',
+        sizes: '32x32',
+        media: '(prefers-color-scheme: dark)',
+        type: 'image/png',
+      },
+      {
+        url: '/favicon-light.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+    ],
+    shortcut: [{ url: '/favicon-light.png', type: 'image/png' }],
+    apple: [{ url: '/favicon-light.png', sizes: '180x180', type: 'image/png' }],
+  },
   title: {
     default: 'Bruket',
     template: '%s | Bruket'
@@ -37,7 +55,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <head></head>
       <body className="bg-off-black text-white relative">
         {/* BackgroundArtwork is global, fixed, z-0 */}
         <BackgroundArtwork />
