@@ -1,9 +1,10 @@
 'use client'
 import { m } from 'framer-motion'
 import Link from 'next/link'
+import type { ButtonHTMLAttributes, ReactNode } from 'react'
 
-interface CTAButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode
+interface CTAButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode
   as?: 'a' | 'button'
   href?: string
   className?: string

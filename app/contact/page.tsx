@@ -4,7 +4,7 @@ import ContactClient from '../contact/ContactClient'
 
 export const metadata: Metadata = {
   title: 'Contact – Bruket',
-  description: 'Contact page for Bruket. Placeholder details.',
+  description: 'Contact Bruket about products, collaborations, or general questions.',
 }
 
 export default function ContactPage() {

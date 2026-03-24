@@ -27,7 +27,7 @@ export default function KvittPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ ...transitionDefault, delay: 0.06, duration: 0.45 }}
           >
-            {'<fix later: specific outcome>'}
+            {'KVITT is a mobile app that turns receipts into product-level insight. See what you actually buy, how often, and how your habits form over time.'}
           </m.p>
         </Section>
 
@@ -43,7 +43,7 @@ export default function KvittPage() {
         <Section>
           <h2 className="text-xl text-white font-semibold mb-2">The solution</h2>
           <p className="text-neutral-300 mb-7">
-            KVITT makes sense of your receipts at the item level. Scan or email your receipts and get clear, structured, and actionable insights into what you’re actually buying, how, and when. Not just your totals—your behavior.
+            KVITT makes sense of your receipts at the item level. Scan receipts with your phone and get clear, structured insight into what you’re actually buying, how often, and when. Not just your totals—your behavior.
           </p>
         </Section>
 
@@ -60,12 +60,12 @@ export default function KvittPage() {
               <p className="text-neutral-300 text-sm">Spot habits, patterns, and changes in your actual spending activity, not just your categories.</p>
             </li>
             <li className="bg-neutral-900 border border-neutral-800 rounded-lg p-4">
-              <h3 className="font-semibold text-white mb-1">Receipt import</h3>
-              <p className="text-neutral-300 text-sm">Scan receipts with your camera, or forward emails for instant processing.</p>
+              <h3 className="font-semibold text-white mb-1">Fast receipt scanning</h3>
+              <p className="text-neutral-300 text-sm">Scan receipts with your camera and let the app extract products, quantities, and prices in seconds.</p>
             </li>
             <li className="bg-neutral-900 border border-neutral-800 rounded-lg p-4">
-              <h3 className="font-semibold text-white mb-1">Smart categorization</h3>
-              <p className="text-neutral-300 text-sm">Products are recognized and grouped, with no tedious manual entry.</p>
+              <h3 className="font-semibold text-white mb-1">Clean product categories</h3>
+              <p className="text-neutral-300 text-sm">Messy receipt lines are normalized into clear product types, so trends and habits stay consistent over time.</p>
             </li>
           </ul>
         </Section>
@@ -73,7 +73,7 @@ export default function KvittPage() {
         {/* Why it's different */}
         <Section>
           <h2 className="text-xl text-white font-semibold mb-2">Why it’s different</h2>
-          <p className="text-neutral-300">{'<fix later: differentiation vs alternatives>'}</p>
+          <p className="text-neutral-300">KVITT tracks products, not just transactions. It focuses on habits and behavior instead of budgets and rules, giving you a direct view of where your money actually goes—without spreadsheets or complex financial setups.</p>
         </Section>
 
         {/* CTA */}
