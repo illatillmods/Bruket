@@ -18,18 +18,11 @@ export const metadata: Metadata = {
     description: 'Bruket is a Swedish product studio. We build practical digital tools.',
     type: 'website',
     locale: 'en_SE',
-    url: 'https://bruket.se',
+    url: 'https://bruket.com',
     siteName: 'Bruket',
     images: ['/og.png']
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Bruket',
-    description: 'Bruket is a Swedish product studio. We build practical digital tools.',
-    images: ['/og.png'],
-    creator: '@bruketse' // placeholder, update as needed
-  },
-  metadataBase: new URL('https://bruket.se'),
+  metadataBase: new URL('https://bruket.com'),
 }
 
 export default function RootLayout({
@@ -39,6 +32,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
+      <head>
+        {/* Light mode */}
+        <link
+          rel="icon"
+          href="/favicon-light.png"
+          media="(prefers-color-scheme: light)"
+        />
+
+        {/* Dark mode */}
+        <link
+          rel="icon"
+          href="/favicon-dark.png"
+          media="(prefers-color-scheme: dark)"
+        />
+
+        {/* Fallback */}
+        <link rel="icon" href="/favicon-light.png" />
+      </head>
       <body className="bg-off-black text-white relative">
         {/* BackgroundArtwork is global, fixed, z-0 */}
         <BackgroundArtwork />

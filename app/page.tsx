@@ -2,6 +2,7 @@
 import Section from '../components/Section'
 import ProductCard from '../components/ProductCard'
 import CTAButton from '../components/CTAButton'
+import Hero from "../components/sections/Hero";
 import { motion } from 'framer-motion'
 import { fadeUp, transitionDefault } from '../lib/motion'
 import { homeContent } from '../content/home'

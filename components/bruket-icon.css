@@ -1,0 +1,78 @@
+.bruket-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* =========================
+   COLORS (SYSTEM)
+========================= */
+
+.bruket-wrapper.light .bg {
+  fill: #F3F4F4;
+}
+
+.bruket-wrapper.dark .bg {
+  fill: #2C2C2C;
+}
+
+.b1 { fill: #F3F4F4; }
+.b2 { fill: #853953; }
+.b3 { fill: #612D53; }
+
+.bruket-wrapper.dark .b1 {
+  fill: #EDEDED;
+}
+
+.chimney {
+  fill: #2C2C2C;
+}
+
+.bruket-wrapper.dark .chimney {
+  fill: #F3F4F4;
+}
+
+.ground {
+  fill: black;
+  opacity: 0.1;
+}
+
+.bruket-wrapper.dark .ground {
+  opacity: 0.3;
+}
+
+.smoke-block {
+  fill: #853953;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.is-animated .smoke-block {
+  animation: smokeFlow 2.8s infinite ease-in-out;
+  transform-origin: center;
+}
+
+@keyframes smokeFlow {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translate(4px, -6px) scale(1.05);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(8px, -12px) scale(0.95);
+    opacity: 0.4;
+  }
+}
+/* Hover = snabbare “produktion” */
+.bruket-wrapper:hover .smoke-block {
+  animation-duration: 1.2s;
+}
+
+/* Subtil glow */
+.b2 {
+  filter: drop-shadow(0 0 6px rgba(133,57,83,0.4));
+}
