@@ -2,9 +2,6 @@
 import Section from '../components/Section'
 import ProductCard from '../components/ProductCard'
 import CTAButton from '../components/CTAButton'
-import Hero from "../components/sections/Hero";
-import { motion } from 'framer-motion'
-import { fadeUp, transitionDefault } from '../lib/motion'
 import { homeContent } from '../content/home'
 import { products } from '../content/products'
 
@@ -14,22 +11,16 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <Section>
-          <motion.h1
-            initial={fadeUp.initial}
-            animate={fadeUp.animate}
-            transition={transitionDefault}
+          <h1
             className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight text-center md:text-left"
           >
             {homeContent.headline}
-          </motion.h1>
-          <motion.p
-            initial={fadeUp.initial}
-            animate={{ opacity: 0.86, y: 0 }}
-            transition={{ ...transitionDefault, delay: 0.13 }}
+          </h1>
+          <p
             className="text-base sm:text-lg md:text-2xl text-neutral-300 mb-8 max-w-lg text-center md:text-left mx-auto md:mx-0"
           >
             {homeContent.subheadline}
-          </motion.p>
+          </p>
           <CTAButton as="a" href="#products" className="mt-2">
             {homeContent.cta}
           </CTAButton>
@@ -47,23 +38,24 @@ export default function Home() {
 
         {/* Product Cards Section */}
         <Section id="products">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            {products.map((product, i) => (
-              <motion.div
-                key={product.id}
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.08 + i * 0.10, ease: 'easeOut' }}
-              >
-                <ProductCard
-                  title={product.title}
-                  oneLiner={product.oneLiner}
-                  forWho={product.forWho}
-                  details={product.details}
-                  href={product.href}
-                />
-              </motion.div>
-            ))}
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold">Products</h2>
+            <p className="text-neutral-300 text-lg">{homeContent.productsIntro}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                >
+                  <ProductCard
+                    title={product.title}
+                    oneLiner={product.oneLiner}
+                    forWho={product.forWho}
+                    details={product.details}
+                    href={product.href}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </Section>
 

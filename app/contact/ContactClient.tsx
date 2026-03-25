@@ -1,8 +1,6 @@
 'use client'
 
 import { useState, type ChangeEvent, type FormEvent } from 'react'
-import { m } from 'framer-motion'
-import { fadeUp, transitionDefault } from '../../lib/motion'
 
 type ContactFormState = {
   email: string
@@ -68,14 +66,11 @@ export default function ContactClient() {
 
   return (
     <>
-      <m.h1
-        initial={fadeUp.initial}
-        animate={fadeUp.animate}
-        transition={{ ...transitionDefault, duration: 0.6 }}
+      <h1
         className="text-4xl md:text-6xl font-extrabold mb-6"
       >
         Contact
-      </m.h1>
+      </h1>
 
       <div className="mb-8 text-neutral-400 text-base max-w-md">
         <p><strong>Company name:</strong> Bruket</p>
@@ -129,14 +124,11 @@ export default function ContactClient() {
           )}
         </form>
       ) : (
-        <m.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ ...transitionDefault, duration: 0.5 }}
+        <div
           className="text-green-400 text-lg font-medium"
         >
           Thanks for reaching out. We’ll be in touch.
-        </m.div>
+        </div>
       )}
     </>
   )

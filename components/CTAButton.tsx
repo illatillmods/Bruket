@@ -8,9 +8,11 @@ interface CTAButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   as?: 'a' | 'button'
   href?: string
   className?: string
+  target?: string
+  rel?: string
 }
 
-export default function CTAButton({ children, as = 'button', href, className = '', ...props }: CTAButtonProps) {
+export default function CTAButton({ children, as = 'button', href, className = '', target, rel, ...props }: CTAButtonProps) {
   // Unified polish: subtle scale on hover/tap, improved color for accessibility, focus ring, more consistent radius & shadow
   const motionProps = {
     whileTap: { scale: 0.97 },
@@ -32,6 +34,8 @@ export default function CTAButton({ children, as = 'button', href, className = '
             id={id}
             tabIndex={tabIndex}
             aria-label={ariaLabel || (typeof children === 'string' ? children : undefined)}
+            target={target}
+            rel={rel}
             {...motionProps}
           >
             {children}
@@ -47,8 +51,9 @@ export default function CTAButton({ children, as = 'button', href, className = '
         id={id}
         tabIndex={tabIndex}
         aria-label={ariaLabel || (typeof children === 'string' ? children : undefined)}
+        target={target || (isExternal ? '_blank' : undefined)}
+        rel={rel || (isExternal ? 'noopener noreferrer' : undefined)}
         {...motionProps}
-        {...(isExternal ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       >
         {children}
       </m.a>
