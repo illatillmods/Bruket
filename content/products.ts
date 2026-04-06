@@ -22,17 +22,17 @@ export const products: Product[] = [
   {
     id: 'spegeln',
     title: 'Spegeln',
-    oneLiner: 'Public-interest scrutiny infrastructure for power in Sweden.',
-    forWho: 'For people who want public records, accountability, and source-linked oversight tools in one place.',
-    details: 'A platform for organizing public information about power holders and institutions, linking documents, timelines, reports, and evidence while staying inside legal boundaries.',
+    oneLiner: 'An uncompromising platform for making Swedish power uncomfortable.',
+    forWho: 'For people who want public records, source-linked scrutiny, and tools built to pressure power instead of protecting it.',
+    details: 'Spegeln collects, cross-references, and publishes public information about power holders and institutions so status, bureaucracy, and distance stop working as cover.',
     href: '/spegeln',
   },
   {
     id: 'mmo',
     title: 'Unnamed MMO',
-    oneLiner: 'A lifelong civilization-simulation MMO project.',
-    forWho: 'For players who want logistics, institutions, trade, conflict, and high agency inside a living world.',
-    details: 'An emergent planetary MMO where players enter an already functioning civilization and reshape it through infrastructure, finance, research, organizations, and conflict.',
+    oneLiner: 'A proof-first civilization MMO built around one dense, real slice.',
+    forWho: 'For players who want cities, logistics, institutions, trade, and leverage instead of a blank survival reset.',
+    details: 'The current direction is grounded in a Confluence Basin prototype with hauling, a flatbed lane, public boards, an atlas, archives, compliance surfaces, and other connected systems.',
     href: '/mmo',
   },
 ]
