@@ -15,9 +15,11 @@ export default function AboutPage() {
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold text-white">What Bruket does</h2>
-        <p>Bruket builds its own products across three areas:</p>
+        <p>Bruket builds its own products across four areas:</p>
         <ul className="list-disc list-inside space-y-1 text-base text-neutral-300">
           <li>digital tools like Hyral and KVITT</li>
+          <li>publishing and accountability infrastructure like Spegeln</li>
+          <li>long-horizon software projects like the unnamed MMO civilization simulation</li>
           <li>physical objects designed internally and produced externally</li>
           <li>selected creative output that sits alongside the product work</li>
         </ul>

@@ -9,7 +9,8 @@ export default function TermsPage() {
       <h1 className="text-4xl font-bold mb-4">Terms & Conditions</h1>
 
       <p>
-        These terms describe the basic conditions for using this website and Bruket’s early-stage products, including Hyral and KVITT.
+        These terms describe the basic conditions for using this website and Bruket's early-stage products, including Hyral, KVITT,
+        Spegeln, and other experimental Bruket projects.
         By accessing or using the site, you agree to these terms.
       </p>
 
@@ -22,10 +23,11 @@ export default function TermsPage() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold">2. No housing or financial advice</h2>
+        <h2 className="text-xl font-semibold">2. Product-specific limitations</h2>
         <p>
           Hyral does not find apartments or guarantee access to housing. KVITT does not provide financial advice or promise financial
-          outcomes. Both tools are intended to give structure and clarity; decisions and results remain your responsibility.
+          outcomes. Other Bruket projects may publish information, support submissions, or remain highly experimental. In all cases,
+          the tools are intended to give structure and clarity; decisions, actions, and outcomes remain your responsibility.
         </p>
       </section>
 

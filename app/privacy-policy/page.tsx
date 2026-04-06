@@ -9,7 +9,8 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-4xl font-bold mb-4">Privacy Policy</h1>
 
       <p>
-        This page explains how Bruket handles personal data in connection with this website and related products such as Hyral and KVITT.
+        This page explains how Bruket handles personal data in connection with this website and related products such as Hyral, KVITT,
+        Spegeln, and other experimental Bruket projects.
         The goal is simple: collect as little data as possible, use it only for clear purposes, and never sell it.
       </p>
 
@@ -40,8 +41,9 @@ export default function PrivacyPolicyPage() {
       <section className="space-y-3">
         <h2 className="text-xl font-semibold">4. Product-specific data</h2>
         <p>
-          Hyral and KVITT are designed around minimal data retention and individual-first principles. Data is processed primarily on a
-          session basis, stored only as long as needed to provide the service, and is not sold or reused for unrelated purposes.
+          Data handling can vary by product. Some tools are designed around minimal session-based retention, while others may need
+          limited storage for submissions, publication workflows, or account-related functionality. In all cases, data is used only for
+          the product's stated purpose and is not sold or reused for unrelated purposes.
         </p>
       </section>
 
