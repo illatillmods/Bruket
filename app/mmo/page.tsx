@@ -14,15 +14,15 @@ const proofPoints = [
   'A real hauling loop: public board, contract acceptance, pickup, delivery, and payout.',
   'A drivable flatbed lane through the motor pool instead of fake full-vehicle theater.',
   'A tracked contract HUD, hauling shell, regional atlas, and City Tour browser tied into the same slice.',
-  'Three anchor civilizations already framing the basin: Forgeplain Span, Tideglass Reach, and Lattice Heights.',
+  'Three anchor civilizations are planned to frame the basin, but their identities and naming are still open.',
   'Live prototype surfaces for markets, compliance, archives, construction, labor pressure, and institutional records.',
 ]
 
 const differences = [
   {
-    title: 'Enter a world already running',
+    title: 'Infrastructure and institutions are the play space',
     description:
-      'The fantasy is not starting from nothing. It is entering cities, depots, permits, infrastructure, labor pressure, archives, and logistics that already exist and learning how to gain leverage inside them.',
+      'The project treats depots, archives, permits, logistics, public notices, chokepoints, and institutional access as core play instead of background dressing around more conventional MMO loops.',
   },
   {
     title: 'Systems first, not fake breadth',
